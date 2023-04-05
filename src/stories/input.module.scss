@@ -1,0 +1,23 @@
+@import "styles/custom/variables";
+
+.input {
+  border: 1px solid $color-grey-400;
+}
+
+.inputError {
+  border: 1px solid $color-red-700;
+}
+
+.input, .inputError {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.heroIcon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,58 @@
+@import "styles/styles.module";
+
+.buttonPrimaryIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonOutline {
+  color: $color-orange-500;
+  background-color: $color-white;
+  border-radius: 1px solid $color-orange-500;
+  &:hover {background-color: $color-orange-100; color: $color-orange-800; border: 1px solid $color-orange-800;}
+  &:active {background-color: $color-orange-200; color: $color-orange-800; border: 1px solid $color-orange-800;}
+  &:focus {background-color: $color-orange-300; color: $color-orange-900; border: 1px solid $color-orange-900;}
+  &:disabled {color: $color-grey-400; border: 1px solid $color-grey-400 }
+}
+
+.buttonClear {
+  color: $color-orange-500;
+  background-color: $color-white;
+  border: none;
+  &:hover {background-color: $color-orange-100; color: $color-orange-800; border: none;}
+  &:active {background-color: $color-orange-200; color: $color-orange-800; border: none;}
+  &:focus {background-color: $color-orange-300; color: $color-orange-900; border: none;}
+  &:disabled {color: $color-grey-400; border: none; }
+}
+
+.buttonLink {
+background-color: $color-white;
+  color: $color-orange-500;
+  border: none;
+  &:hover {color: $color-orange-200; border: none;}
+  &:active {color: $color-orange-700; border: none;}
+  &:focus {color: $color-orange-900; border: none;}
+  &:disabled {color: $color-grey-400; border: none; }
+}
+
+.buttonPrimary, .buttonPrimaryIcon {
+  background-color: $color-orange-500;
+  border: none;
+  &:hover {background-color: $color-orange-300}
+  &:active {background-color: $color-orange-500}
+  &:focus {background-color: $color-orange-300}
+  &:disabled {background-color: $color-grey-400}
+}
+
+.buttonPrimary, .buttonHover, .buttonActive, .buttonFocus, .buttonDisabled, .buttonPrimaryIcon {
+  padding: 8px 16px;
+  font-family: "American Typewriter";
+  color: $color-white;
+  border-radius: 20px;
+}
+
+.buttonIcon {
+  width: 24px;
+  height: 24px;
+}
